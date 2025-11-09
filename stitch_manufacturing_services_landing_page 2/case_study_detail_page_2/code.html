@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Protomake Case Study</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-[#111418] dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-gray-200 dark:border-b-gray-700 px-4 sm:px-10 md:px-20 lg:px-40 py-3 bg-white dark:bg-background-dark sticky top-0 z-50">
+<div class="flex items-center gap-4 text-[#111418] dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">Protomake</h2>
+</div>
+<div class="hidden lg:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Capabilities</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Case Studies</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Get a Quote</span>
+</button>
+</div>
+<div class="lg:hidden">
+<button class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1 px-4 sm:px-8">
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<div class="flex min-w-72 flex-col gap-3">
+<p class="text-4xl font-bold leading-tight tracking-[-0.033em] md:text-5xl">High-Performance Automotive Bracket</p>
+<p class="text-[#617589] dark:text-gray-400 text-base font-normal leading-normal md:text-lg"> A case study on precision engineering and cost-effective manufacturing for the automotive industry. </p>
+</div>
+</div>
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-xl min-h-[400px] my-4" data-alt="Close-up of a precision-engineered metal bracket installed in a modern car engine bay" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCEFC4S_n8XspDsceHBQ_eFomodPgEhlgU8NukTzKLluW1tNDEUgROeJ-w52hE8_MtgRt4OQCjPZwF9eO58FIJMBcYDN6f_zLa1rur278zefXLs0X3r7zof06454G1MbdjeqVORiDRmOTjrSy3rMRzqszDzmbaFcfn2vO3JfGFKw3tkeoJxor03YNnytV9nJrMXeJWxSyQDNWgsT20FW-_N1nD-LzLkSE8zwkX-dyU-H5yrdGINOce2kQwG3HHV-gQVJS9cwHAJcIY");'></div>
+<h2 class="text-3xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-8 md:pt-12">Project Overview</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
+<div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50">
+<p class="text-base font-medium leading-normal text-gray-500 dark:text-gray-400">Client</p>
+<p class="text-2xl font-bold leading-tight">AutoInnovate Corp.</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50">
+<p class="text-base font-medium leading-normal text-gray-500 dark:text-gray-400">Industry</p>
+<p class="text-2xl font-bold leading-tight">Automotive</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50">
+<p class="text-base font-medium leading-normal text-gray-500 dark:text-gray-400">Services Used</p>
+<p class="text-2xl font-bold leading-tight">CNC Machining, Anodizing</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 border border-primary/50 bg-primary/10 dark:bg-primary/20">
+<p class="text-base font-medium leading-normal text-primary/80 dark:text-primary/90">Key Result</p>
+<p class="text-2xl font-bold leading-tight text-primary">30% Cost Reduction</p>
+</div>
+</div>
+<div class="flex flex-col space-y-8 px-4 pt-12 md:pt-16">
+<div id="challenge">
+<h3 class="text-2xl font-bold leading-tight tracking-[-0.015em] mb-4">The Challenge</h3>
+<p class="text-lg leading-relaxed text-gray-600 dark:text-gray-300">AutoInnovate Corp. approached us with a critical need: to re-engineer a key engine mounting bracket for their new line of performance vehicles. The existing part was prone to stress fractures under high-torque conditions and was too heavy, negatively impacting the vehicle's overall weight and fuel efficiency. They required a stronger, lighter, and more cost-effective solution without compromising on safety or performance.</p>
+</div>
+<div id="solution">
+<h3 class="text-2xl font-bold leading-tight tracking-[-0.015em] mb-4">Our Solution</h3>
+<p class="text-lg leading-relaxed text-gray-600 dark:text-gray-300 mb-8">Our team of engineers and machinists developed a multi-faceted solution. We started with a comprehensive Finite Element Analysis (FEA) to identify stress points in the original design. Using this data, we redesigned the bracket in CAD, incorporating a lattice structure to reduce material usage while enhancing structural integrity. The part was then manufactured using our 5-axis CNC mills from a single block of aerospace-grade 7075 aluminum, followed by a Type III hardcoat anodizing for maximum durability and corrosion resistance.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+<img class="rounded-xl w-full h-64 object-cover" data-alt="A modern 5-axis CNC machine in a clean factory environment, with a robotic arm in the background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACVHoMJ_fWfiOnyKf5xx1ITS3O4_FK_UkCIeY8W5CcsCRk3maoH_SuWDmPx6C6YXkMnfbuAj4t8SF0SacZp-O7HxH-S8Hf-nm0z6EBYLeBHAHj2DAbVmfVDwhAXsPyUiJRVba8_cUkn8eza2aQzoX0If_R7Ir5oh9bBWYAdiiKmeVWEG7YGu7lVWxk5JoqlskItDvagt8EfLldz0_sZZJAXKqFkr3zgr0wf7Z_LFiKa6NlzS_9dHjnTLacl7LTuQhfnLGO9oe7IDc"/>
+<img class="rounded-xl w-full h-64 object-cover" data-alt="A 3D CAD model of the redesigned automotive bracket on a computer screen, showing complex geometry and stress analysis." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi1TOhk9iIC-q9dx90WpBFOWlnYqC59aocUgOpsFdSV67rBjdvLA-AWj0V6h48dEsMijVSpkomsR1zAu6sXZuYRpqq5oPM9h2bII1PpnoPQoyiWrW9vBcaO-l5VJ7tt52ZnOogdkRzozkCwZx9EzvzymOBUX36ifc2VFh3HWf8if3UcsKH0PR4oyfNnUVpBjWWvq15UMhmmqxdRvK-s0DjRgOZRrGIQGW0rr1WGWKQgOGAxP7103o9GkgIZrCifyPaBVObSZSLb9M"/>
+</div>
+</div>
+<div id="outcome">
+<h3 class="text-2xl font-bold leading-tight tracking-[-0.015em] mb-4">The Outcome</h3>
+<p class="text-lg leading-relaxed text-gray-600 dark:text-gray-300">The new bracket exceeded all of the client's performance targets. It was 40% lighter and 150% stronger than the original part. Our optimized manufacturing process also led to a 30% reduction in per-unit cost, delivering significant savings at scale. The project was completed two weeks ahead of schedule, allowing AutoInnovate to accelerate their production timeline.</p>
+<div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-white dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 rounded-xl p-8">
+<div class="relative group rounded-xl overflow-hidden">
+<video class="w-full aspect-video rounded-xl" controls="" poster="https://lh3.googleusercontent.com/aida-public/AB6AXuCBHwytFVuzh_3Jri2EjcCrzXQWyisDkckMlzfzshlhE_nS-U7WhUxpwYaPRdrOjr5zwuWOzyt4OVfrhmuHjsXURZmcG1isO9v9UMQD0OgDBDD-DlulECuliyLPr5Xr-YXaD0-mWMlZPT57mLQKeZjFAFG9lA4vEehHUXz0s2BmhS2N0gQ4HgAjw08dodHOekTxuPOh6j6eXW3E8AXx5yfr6X08U1Rhb8gt9B8kPVwRkiw1MBxQsLX1NYlVxuoH8MKP6sH1j7hJ7Lg" preload="metadata">
+<source src="#" type="video/mp4"/>
+</video>
+<div class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/60 transition-all duration-300 cursor-pointer">
+<span class="material-symbols-outlined text-white text-6xl drop-shadow-lg" data-icon="play_circle">play_circle</span>
+</div>
+</div>
+<div class="flex flex-col">
+<blockquote class="text-xl italic text-gray-800 dark:text-gray-100">"Protomake didn't just make a part for us; they engineered a comprehensive solution. Their expertise and precision manufacturing were instrumental in enhancing our vehicle's performance and our bottom line. We couldn't be happier with the results."</blockquote>
+<div class="flex items-center mt-6">
+<img class="w-14 h-14 rounded-full object-cover mr-4" data-alt="Professional headshot of a woman with glasses in a modern office." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBHwytFVuzh_3Jri2EjcCrzXQWyisDkckMlzfzshlhE_nS-U7WhUxpwYaPRdrOjr5zwuWOzyt4OVfrhmuHjsXURZmcG1isO9v9UMQD0OgDBDD-DlulECuliyLPr5Xr-YXaD0-mWMlZPT57mLQKeZjFAFG9lA4vEehHUXz0s2BmhS2N0gQ4HgAjw08dodHOekTxuPOh6j6eXW3E8AXx5yfr6X08U1Rhb8gt9B8kPVwRkiw1MBxQsLX1NYlVxuoH8MKP6sH1j7hJ7Lg"/>
+<div>
+<p class="font-bold">Sarah Jenkins</p>
+<p class="text-gray-500 dark:text-gray-400">Lead Engineer, AutoInnovate Corp.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-between items-center gap-4 p-4 mt-16 border-t border-gray-200 dark:border-gray-700">
+<button class="flex items-center gap-2 min-w-[84px] max-w-[480px] cursor-pointer justify-center overflow-hidden rounded-lg h-11 px-4 text-sm font-bold leading-normal tracking-[0.015em] bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+<span class="truncate hidden sm:block">Previous Project</span>
+</button>
+<button class="flex items-center gap-2 min-w-[84px] max-w-[480px] cursor-pointer justify-center overflow-hidden rounded-lg h-11 px-4 text-sm font-bold leading-normal tracking-[0.015em] bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+<span class="truncate hidden sm:block">Next Project</span>
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</main>
+<footer class="bg-white dark:bg-gray-900/50 py-12 px-4 sm:px-8">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-3xl font-bold md:text-4xl">Ready to Bring Your Design to Life?</h2>
+<p class="mt-4 text-lg text-gray-600 dark:text-gray-400">From a single prototype to full-scale production, our team is ready to tackle your most complex manufacturing challenges.</p>
+<button class="mt-8 flex items-center gap-2 min-w-[84px] cursor-pointer justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors mx-auto">
+<span class="truncate">Get a Quote</span>
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</footer>
+</div>
+</div>
+
+</body></html>

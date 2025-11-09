@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - ManuServe</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0A2540",
+                        "accent": "#FF7A00",
+                        "text-primary": "#0A2540",
+                        "text-secondary": "#425466",
+                        "background-light": "#F6F9FC",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-secondary">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<header class="bg-white dark:bg-background-dark sticky top-0 z-50 border-b border-gray-200/50 dark:border-gray-800/50">
+<div class="container mx-auto px-4">
+<div class="flex items-center justify-between whitespace-nowrap h-16">
+<div class="flex items-center gap-4 text-text-primary dark:text-white">
+<div class="size-6 text-primary dark:text-accent">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.5563 34.1455V13.8546C39.5563 15.708 36.8773 17.3437 32.7927 18.3189C30.2914 18.916 27.263 19.2655 24 19.2655C20.737 19.2655 17.7086 18.916 15.2073 18.3189C11.1227 17.3437 8.44365 15.708 8.44365 13.8546V34.1455C8.44365 35.9988 11.1227 37.6346 15.2073 38.6098C17.7086 39.2069 20.737 39.5564 24 39.5564C27.263 39.5564 30.2914 39.2069 32.7927 38.6098C36.8773 37.6346 39.5563 35.9988 39.5563 34.1455Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M10.4485 13.8519C10.4749 13.9271 10.6203 14.246 11.379 14.7361C12.298 15.3298 13.7492 15.9145 15.6717 16.3735C18.0007 16.9296 20.8712 17.2655 24 17.2655C27.1288 17.2655 29.9993 16.9296 32.3283 16.3735C34.2508 15.9145 35.702 15.3298 36.621 14.7361C37.3796 14.246 37.5251 13.9271 37.5515 13.8519C37.5287 13.7876 37.4333 13.5973 37.0635 13.2931C36.5266 12.8516 35.6288 12.3647 34.343 11.9175C31.79 11.0295 28.1333 10.4437 24 10.4437C19.8667 10.4437 16.2099 11.0295 13.657 11.9175C12.3712 12.3647 11.4734 12.8516 10.9365 13.2931C10.5667 13.5973 10.4713 13.7876 10.4485 13.8519ZM37.5563 18.7877C36.3176 19.3925 34.8502 19.8839 33.2571 20.2642C30.5836 20.9025 27.3973 21.2655 24 21.2655C20.6027 21.2655 17.4164 20.9025 14.7429 20.2642C13.1498 19.8839 11.6824 19.3925 10.4436 18.7877V34.1275C10.4515 34.1545 10.5427 34.4867 11.379 35.027C12.298 35.6207 13.7492 36.2054 15.6717 36.6644C18.0007 37.2205 20.8712 37.5564 24 37.5564C27.1288 37.5564 29.9993 37.2205 32.3283 36.6644C34.2508 36.2054 35.702 35.6207 36.621 35.027C37.4573 34.4867 37.5485 34.1546 37.5563 34.1275V18.7877ZM41.5563 13.8546V34.1455C41.5563 36.1078 40.158 37.5042 38.7915 38.3869C37.3498 39.3182 35.4192 40.0389 33.2571 40.5551C30.5836 41.1934 27.3973 41.5564 24 41.5564C20.6027 41.5564 17.4164 41.1934 14.7429 40.5551C12.5808 40.0389 10.6502 39.3182 9.20848 38.3869C7.84205 37.5042 6.44365 36.1078 6.44365 34.1455L6.44365 13.8546C6.44365 12.2684 7.37223 11.0454 8.39581 10.2036C9.43325 9.3505 10.8137 8.67141 12.343 8.13948C15.4203 7.06909 19.5418 6.44366 24 6.44366C28.4582 6.44366 32.5797 7.06909 35.657 8.13948C37.1863 8.67141 38.5667 9.3505 39.6042 10.2036C40.6278 11.0454 41.5563 12.2684 41.5563 13.8546Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-text-primary dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">ManuServe</h2>
+</div>
+<nav class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-text-secondary dark:text-gray-300 text-sm font-medium leading-normal hover:text-accent" href="#">Services</a>
+<a class="text-text-secondary dark:text-gray-300 text-sm font-medium leading-normal hover:text-accent" href="#">Materials</a>
+<a class="text-text-secondary dark:text-gray-300 text-sm font-medium leading-normal hover:text-accent" href="#">About Us</a>
+<a class="text-text-secondary dark:text-gray-300 text-sm font-medium leading-normal hover:text-accent" href="#">Blog</a>
+<a class="text-accent text-sm font-bold leading-normal" href="#">Contact</a>
+</div>
+</nav>
+<button class="md:hidden text-text-primary dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<!-- PageHeading -->
+<section class="py-16 md:py-24 text-center">
+<div class="container mx-auto px-4">
+<p class="text-primary dark:text-accent font-bold text-sm uppercase">Contact Us</p>
+<h1 class="text-text-primary dark:text-white text-4xl md:text-5xl font-bold leading-tight tracking-tighter mt-2">Get in Touch</h1>
+<p class="text-text-secondary dark:text-gray-400 text-lg md:text-xl font-normal leading-normal max-w-2xl mx-auto mt-4">We're here to help with your custom parts production needs. Reach out to our engineering team.</p>
+</div>
+</section>
+<div class="container mx-auto px-4 pb-16 md:pb-24">
+<div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
+<!-- Left Column: Contact Info & Map -->
+<div class="flex flex-col gap-10">
+<!-- Contact Information -->
+<div>
+<h2 class="text-text-primary dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3">Contact Information</h2>
+<div class="grid grid-cols-1 gap-y-1">
+<div class="flex items-start py-4 border-t border-gray-200 dark:border-gray-800">
+<span class="material-symbols-outlined text-primary dark:text-accent mr-4 mt-1">location_on</span>
+<div>
+<p class="text-text-secondary dark:text-gray-400 text-sm font-normal">Address</p>
+<p class="text-text-primary dark:text-gray-200 text-base font-medium">123 Industrial Way, Tech Park, CA 90210</p>
+</div>
+</div>
+<div class="flex items-start py-4 border-t border-gray-200 dark:border-gray-800">
+<span class="material-symbols-outlined text-primary dark:text-accent mr-4 mt-1">call</span>
+<div>
+<p class="text-text-secondary dark:text-gray-400 text-sm font-normal">Phone</p>
+<p class="text-text-primary dark:text-gray-200 text-base font-medium">+1 (555) 123-4567</p>
+</div>
+</div>
+<div class="flex items-start py-4 border-t border-gray-200 dark:border-gray-800">
+<span class="material-symbols-outlined text-primary dark:text-accent mr-4 mt-1">mail</span>
+<div>
+<p class="text-text-secondary dark:text-gray-400 text-sm font-normal">Email</p>
+<p class="text-text-primary dark:text-gray-200 text-base font-medium">sales@manuserve.com</p>
+</div>
+</div>
+<div class="flex items-start py-4 border-t border-b border-gray-200 dark:border-gray-800">
+<span class="material-symbols-outlined text-primary dark:text-accent mr-4 mt-1">schedule</span>
+<div>
+<p class="text-text-secondary dark:text-gray-400 text-sm font-normal">Business Hours</p>
+<p class="text-text-primary dark:text-gray-200 text-base font-medium">Monday - Friday, 8:00 AM - 5:00 PM PST</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Map -->
+<div class="flex">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl object-cover" data-alt="Map showing the location of ManuServe offices." data-location="Tech Park, CA" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWPcpkYpmq56q2weiBDGY-6MWId_4EDtsJnB5GU_W5OxCMtHr2_GRxa4OMDXrXlCSy5AfAvhoenfdpVKyJB5ZZDuLqcb-8Go5NdUzDGNWLe3EzvNC580jFPuV-bO-8YM4dkMsqPqkOvfYO0y6YoJ8eKhBLl0ay6Y5ZgZZV8h2tKflDi_moXKMmONc-D-UtfuDsNRj3EqL7HtLcDvZyBebATXkFWnk_sA46gBwe0O-DR0A3LHUspv1RLlU_Nvx2Bv71fs0DE93YjuY');"></div>
+</div>
+</div>
+<!-- Right Column: Contact Form -->
+<div class="bg-white dark:bg-background-dark/50 rounded-xl p-8 md:p-10 shadow-lg border border-gray-200/50 dark:border-gray-800/50">
+<h2 class="text-text-primary dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] mb-1">Send Us a Message</h2>
+<p class="text-text-secondary dark:text-gray-400 mb-6">Fill out the form below and we'll get back to you shortly.</p>
+<form class="space-y-6">
+<div>
+<label class="block text-sm font-medium text-text-secondary dark:text-gray-300" for="name">Name</label>
+<div class="mt-1">
+<input class="block w-full rounded-lg border-gray-300 dark:border-gray-700 dark:bg-gray-900/50 dark:text-white shadow-sm focus:border-primary focus:ring-primary sm:text-sm" id="name" name="name" placeholder="John Doe" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-text-secondary dark:text-gray-300" for="email">Company Email</label>
+<div class="mt-1">
+<input class="block w-full rounded-lg border-gray-300 dark:border-gray-700 dark:bg-gray-900/50 dark:text-white shadow-sm focus:border-primary focus:ring-primary sm:text-sm" id="email" name="email" placeholder="you@company.com" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-text-secondary dark:text-gray-300" for="subject">Subject</label>
+<div class="mt-1">
+<select class="block w-full rounded-lg border-gray-300 dark:border-gray-700 dark:bg-gray-900/50 dark:text-white shadow-sm focus:border-primary focus:ring-primary sm:text-sm" id="subject" name="subject">
+<option>Quote Request</option>
+<option>Technical Support</option>
+<option>General Inquiry</option>
+<option>Partnership</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-text-secondary dark:text-gray-300" for="message">Message</label>
+<div class="mt-1">
+<textarea class="block w-full rounded-lg border-gray-300 dark:border-gray-700 dark:bg-gray-900/50 dark:text-white shadow-sm focus:border-primary focus:ring-primary sm:text-sm" id="message" name="message" placeholder="Please describe your project or question..." rows="4"></textarea>
+</div>
+</div>
+<div>
+<button class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-primary hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors duration-200" type="submit">
+                                        Send Message
+                                    </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- FAQ Section -->
+<section class="py-16 md:py-24 bg-white dark:bg-background-dark/50">
+<div class="container mx-auto px-4">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-text-primary dark:text-white text-3xl font-bold tracking-tight">Frequently Asked Questions</h2>
+<p class="mt-4 text-lg text-text-secondary dark:text-gray-400">Can't find the answer you're looking for? Reach out to our customer support team.</p>
+</div>
+<div class="mt-12 max-w-3xl mx-auto">
+<div class="divide-y divide-gray-200 dark:divide-gray-800">
+<details class="group py-6" open="">
+<summary class="flex cursor-pointer items-center justify-between">
+<h3 class="text-lg font-medium text-text-primary dark:text-white">What are your typical turnaround times?</h3>
+<span class="relative ml-4 h-5 w-5 flex-shrink-0">
+<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</span>
+</summary>
+<p class="mt-4 leading-relaxed text-text-secondary dark:text-gray-400">Turnaround times vary depending on the complexity and volume of the order. Standard prototyping can take as little as 3-5 business days, while high-volume production runs are quoted on a case-by-case basis. Expedited options are available.</p>
+</details>
+<details class="group py-6">
+<summary class="flex cursor-pointer items-center justify-between">
+<h3 class="text-lg font-medium text-text-primary dark:text-white">What file formats do you accept for quotes?</h3>
+<span class="relative ml-4 h-5 w-5 flex-shrink-0">
+<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</span>
+</summary>
+<p class="mt-4 leading-relaxed text-text-secondary dark:text-gray-400">We accept a wide range of 3D CAD file formats, including STEP, IGES, STL, SLDPRT, and X_T. For the most accurate quotes, we recommend providing a STEP file along with a 2D drawing in PDF format if available.</p>
+</details>
+<details class="group py-6">
+<summary class="flex cursor-pointer items-center justify-between">
+<h3 class="text-lg font-medium text-text-primary dark:text-white">What materials can you work with?</h3>
+<span class="relative ml-4 h-5 w-5 flex-shrink-0">
+<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</span>
+</summary>
+<p class="mt-4 leading-relaxed text-text-secondary dark:text-gray-400">Our capabilities include a vast array of materials, from various plastics like ABS, PC, and Nylon to metals such as Aluminum, Stainless Steel, and Titanium. Please visit our Materials page for a complete list and specifications.</p>
+</details>
+<details class="group py-6">
+<summary class="flex cursor-pointer items-center justify-between">
+<h3 class="text-lg font-medium text-text-primary dark:text-white">Do you offer international shipping?</h3>
+<span class="relative ml-4 h-5 w-5 flex-shrink-0">
+<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</span>
+</summary>
+<p class="mt-4 leading-relaxed text-text-secondary dark:text-gray-400">Yes, we ship parts to customers worldwide. We partner with major logistics providers to ensure reliable and timely delivery. Shipping costs and times will be included in your formal quotation.</p>
+</details>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-background-dark text-white">
+<div class="container mx-auto px-4 py-12">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+<div class="col-span-2 lg:col-span-2">
+<div class="flex items-center gap-3">
+<div class="size-6 text-white">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.5563 34.1455V13.8546C39.5563 15.708 36.8773 17.3437 32.7927 18.3189C30.2914 18.916 27.263 19.2655 24 19.2655C20.737 19.2655 17.7086 18.916 15.2073 18.3189C11.1227 17.3437 8.44365 15.708 8.44365 13.8546V34.1455C8.44365 35.9988 11.1227 37.6346 15.2073 38.6098C17.7086 39.2069 20.737 39.5564 24 39.5564C27.263 39.5564 30.2914 39.2069 32.7927 38.6098C36.8773 37.6346 39.5563 35.9988 39.5563 34.1455Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M10.4485 13.8519C10.4749 13.9271 10.6203 14.246 11.379 14.7361C12.298 15.3298 13.7492 15.9145 15.6717 16.3735C18.0007 16.9296 20.8712 17.2655 24 17.2655C27.1288 17.2655 29.9993 16.9296 32.3283 16.3735C34.2508 15.9145 35.702 15.3298 36.621 14.7361C37.3796 14.246 37.5251 13.9271 37.5515 13.8519C37.5287 13.7876 37.4333 13.5973 37.0635 13.2931C36.5266 12.8516 35.6288 12.3647 34.343 11.9175C31.79 11.0295 28.1333 10.4437 24 10.4437C19.8667 10.4437 16.2099 11.0295 13.657 11.9175C12.3712 12.3647 11.4734 12.8516 10.9365 13.2931C10.5667 13.5973 10.4713 13.7876 10.4485 13.8519ZM37.5563 18.7877C36.3176 19.3925 34.8502 19.8839 33.2571 20.2642C30.5836 20.9025 27.3973 21.2655 24 21.2655C20.6027 21.2655 17.4164 20.9025 14.7429 20.2642C13.1498 19.8839 11.6824 19.3925 10.4436 18.7877V34.1275C10.4515 34.1545 10.5427 34.4867 11.379 35.027C12.298 35.6207 13.7492 36.2054 15.6717 36.6644C18.0007 37.2205 20.8712 37.5564 24 37.5564C27.1288 37.5564 29.9993 37.2205 32.3283 36.6644C34.2508 36.2054 35.702 35.6207 36.621 35.027C37.4573 34.4867 37.5485 34.1546 37.5563 34.1275V18.7877ZM41.5563 13.8546V34.1455C41.5563 36.1078 40.158 37.5042 38.7915 38.3869C37.3498 39.3182 35.4192 40.0389 33.2571 40.5551C30.5836 41.1934 27.3973 41.5564 24 41.5564C20.6027 41.5564 17.4164 41.1934 14.7429 40.5551C12.5808 40.0389 10.6502 39.3182 9.20848 38.3869C7.84205 37.5042 6.44365 36.1078 6.44365 34.1455L6.44365 13.8546C6.44365 12.2684 7.37223 11.0454 8.39581 10.2036C9.43325 9.3505 10.8137 8.67141 12.343 8.13948C15.4203 7.06909 19.5418 6.44366 24 6.44366C28.4582 6.44366 32.5797 7.06909 35.657 8.13948C37.1863 8.67141 38.5667 9.3505 39.6042 10.2036C40.6278 11.0454 41.5563 12.2684 41.5563 13.8546Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold">ManuServe</h2>
+</div>
+<p class="mt-4 text-sm text-gray-300">Precision manufacturing for your brightest ideas.</p>
+</div>
+<div class="col-span-1">
+<h3 class="font-semibold text-white">Company</h3>
+<ul class="mt-4 space-y-2">
+<li><a class="text-sm text-gray-300 hover:text-white" href="#">About Us</a></li>
+<li><a class="text-sm text-gray-300 hover:text-white" href="#">Careers</a></li>
+<li><a class="text-sm text-gray-300 hover:text-white" href="#">Blog</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h3 class="font-semibold text-white">Services</h3>
+<ul class="mt-4 space-y-2">
+<li><a class="text-sm text-gray-300 hover:text-white" href="#">CNC Machining</a></li>
+<li><a class="text-sm text-gray-300 hover:text-white" href="#">3D Printing</a></li>
+<li><a class="text-sm text-gray-300 hover:text-white" href="#">Injection Molding</a></li>
+</ul>
+</div>
+<div class="col-span-2 lg:col-span-1">
+<h3 class="font-semibold text-white">Legal</h3>
+<ul class="mt-4 space-y-2">
+<li><a class="text-sm text-gray-300 hover:text-white" href="#">Privacy Policy</a></li>
+<li><a class="text-sm text-gray-300 hover:text-white" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="col-span-2 lg:col-span-1">
+<h3 class="font-semibold text-white">Follow Us</h3>
+<div class="flex mt-4 space-x-4">
+<a class="text-gray-300 hover:text-white" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.206v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.337 7.433c-.945 0-1.708-.763-1.708-1.708s.763-1.708 1.708-1.708c.945 0 1.708.763 1.708 1.708s-.763 1.708-1.708 1.708zM6.613 16.338H4.06v-8.59h2.553v8.59zM17.638 0H6.362A6.362 6.362 0 000 6.362v11.276A6.362 6.362 0 006.362 24h11.276A6.362 6.362 0 0024 17.638V6.362A6.362 6.362 0 0017.638 0z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-gray-300 hover:text-white" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-12 border-t border-white/20 pt-8 text-center text-sm text-gray-300">
+<p>© 2024 ManuServe. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

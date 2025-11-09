@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ManuFlow - Modern Manufacturing Management</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0A2540",
+                        "secondary": "#FF7A00",
+                        "background-light": "#F6F9FC",
+                        "background-dark": "#101922",
+                        "text-light": "#333333",
+                        "text-dark": "#E6E6E6",
+                        "border-light": "#E6E6E6",
+                        "border-dark": "#333333"
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 1,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col w-full max-w-6xl flex-1">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-border-light dark:border-border-dark px-6 md:px-10 py-4 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-50">
+<div class="flex items-center gap-4 text-primary dark:text-white">
+<div class="size-6">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">ManuFlow</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-secondary" href="#">Features</a>
+<a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-secondary" href="#">Pricing</a>
+<a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-secondary" href="#">Testimonials</a>
+<a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-secondary" href="#">Log In</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-secondary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Sign Up for Free</span>
+</button>
+</div>
+</header>
+<main>
+<!-- HeroSection -->
+<div class="px-4 py-16 md:py-24">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-6 text-center lg:text-left">
+<div class="flex flex-col gap-4">
+<h1 class="text-4xl md:text-6xl font-black leading-tight tracking-tighter text-primary dark:text-white">
+                                            Manage Your Manufacturing Projects Smarter
+                                        </h1>
+<h2 class="text-base md:text-lg font-normal leading-normal text-text-light/80 dark:text-text-dark/80">
+                                            Centralize quotes, track production in real-time, and collaborate seamlessly with your team. From prototype to production, we've got you covered.
+                                        </h2>
+</div>
+<button class="flex self-center lg:self-start min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Request a Demo</span>
+</button>
+</div>
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl" data-alt="Abstract 3D render of mechanical parts, symbolizing precision manufacturing." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1lVkhi2FVY7OFLshNeAmwq3Pn6diCbf4QC6DUYrNzwPDs-YTzmZC-prSbZUGgFcp5bMF2Iw8Lpv-P69iDX7CUTLiwDogNg70r3LDJtk6RB4v_cL6_q0eYhk65k5-SCNsaAnPgm2WMiXfpRM2_ehuws96C8zbQl4l2Zc0n-BBD6bfFHbz9TsazQUJhA34z-j3XCMVUYtN_bzc18vK_pjjoIdWoaUTYLad1ev8KtF472FnByYtNG5cFJbF5JY_f7fI4ovCpzj_Fnao");'></div>
+</div>
+</div>
+<!-- FeatureSection -->
+<div class="flex flex-col gap-10 px-4 py-16 md:py-20 bg-white dark:bg-background-dark/50">
+<div class="flex flex-col gap-4 text-center max-w-3xl mx-auto">
+<h2 class="text-3xl md:text-4xl font-black leading-tight tracking-tight text-primary dark:text-white">
+                                    A Platform Built for Modern Manufacturing
+                                </h2>
+<p class="text-base font-normal leading-normal text-text-light/80 dark:text-text-dark/80">
+                                    Discover key functionalities designed to save you time, reduce errors, and give you complete control over your production pipeline.
+                                </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="flex flex-col gap-4 p-4 rounded-xl border border-border-light dark:border-border-dark">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Screenshot of the instant quoting interface, showing a CAD model and a price breakdown." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC2rbGA-f0Ggr7Ln6PIxvjDgBaXCynMlBP3eyxZtcdnUsnCfDwak4SHSTDaYVyCqptvkk1Jv1i85BuI8KzUzET5HpAnhgRrh8yPl8OvVf3isouEtIfwZ3ja7WrZUVlDKCbXt-Q4EUj4Niub6JsTkicIP4Qn01QXGq_R4qeFE_rOlbQp8sygJpIDJJHjhYmQxLp8DYpANtrytuLRid6TwMYBPxPSwKhYIYxSvIiSTL7ly3Glmg_B5FkW0-waXnQCKQYM0nG0Pdtp5uo");'></div>
+<div>
+<p class="text-lg font-bold">Instant Quoting</p>
+<p class="text-sm font-normal leading-normal text-text-light/80 dark:text-text-dark/80">
+                                            Upload your CAD files and receive immediate, accurate pricing. No more waiting days for a quote.
+                                        </p>
+</div>
+</div>
+<div class="flex flex-col gap-4 p-4 rounded-xl border border-border-light dark:border-border-dark">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Short video showing team members commenting on a 3D model within the platform." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCNgB4lbJLrF4d2_pPuuVFFv-A_vB6si1rfEVFqM6PGhLe-xWClEEzArmXegd5N-JCOgVvKQs0acMudDlGfIJZog4fkaDRi1t8SaFHJFalzLEspNi4z1Jb0Jrm-bo3zPHvdT7yK1mfcewu3sd3Xsn0vsipiRSWMaqxjlPi3Kx80U70hYTPMoWtlGQ9MYO9XIPlu03gdZtxtXlY-7Iy15jL_h2oMIXqRx4pqcOr68OElgPaSwARcZbQ5x_ZS-V7oyrG77309zG0Y0N8");'></div>
+<div>
+<p class="text-lg font-bold">Team Collaboration</p>
+<p class="text-sm font-normal leading-normal text-text-light/80 dark:text-text-dark/80">
+                                            Comment on designs, share files, and manage project access to keep your entire team in sync.
+                                        </p>
+</div>
+</div>
+<div class="flex flex-col gap-4 p-4 rounded-xl border border-border-light dark:border-border-dark">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Animated graphic of a project timeline with status updates." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_wAdH24CN8DL4O2Il48TrNTkUXZtkGAcY2-21Igdp53jIagQrD2LnQAeVU8giO-zdC2UOp-mqIW3eI-i-gcimtKLzUiAwld2KQoYHa_yJYDZxl4Ke3i7KLw8CLM_bgfp_stP4pToHa04Qaa6KGKBPl6yiK68SMb_8fs-nDgCii_cb9NEAGxyQiSwrFdEVZyGgzFcOBiERzTxYwDMGRCaetQtfCctt3o70t6aZtxbDIto_eNhxDqktdMTLGb6aj9ECtgbAygxww_M");'></div>
+<div>
+<p class="text-lg font-bold">Order Tracking</p>
+<p class="text-sm font-normal leading-normal text-text-light/80 dark:text-text-dark/80">
+                                            Get real-time status updates from the moment your order is placed to the day it ships.
+                                        </p>
+</div>
+</div>
+<div class="flex flex-col gap-4 p-4 rounded-xl border border-border-light dark:border-border-dark">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Screenshot of a sample quality control report PDF viewer in the application." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDSBYh_np6GGuJNx4b9_WcNeJ3vSvMKHK7HvFkTwQ3T_Y79_zPr6xriM1ie60AQWHBmioEomXhC9nbS4yCOdeZm8JDevwrlblNHlQpAwDda7ZovtiI0Xwc9oKPy7mVDpkwKevAoRxfNOFVmio-X85hR7fLsCabD8z7lvr8yMb61wIFcf5zt2LNbuHHPlgBqV_9AgMGca_OzI9jb3T7XeNzQoK_MIQcOVDZoXfVmFSf0AuM8nu4P9GyBWpBATZS3MerkHsbmjwYuRdA");'></div>
+<div>
+<p class="text-lg font-bold">Quality Control Reports</p>
+<p class="text-sm font-normal leading-normal text-text-light/80 dark:text-text-dark/80">
+                                            Access detailed inspection reports and all necessary quality documentation directly on the platform.
+                                        </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonials Section -->
+<div class="px-4 py-16 md:py-20">
+<h2 class="text-3xl md:text-4xl font-black leading-tight tracking-tight text-primary dark:text-white text-center pb-12">Trusted by Leading Engineers and Project Managers</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4 p-6 bg-white dark:bg-background-dark/50 rounded-xl border border-border-light dark:border-border-dark">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12" data-alt="Professional headshot of Sarah Johnson." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCPHY1YUe2lbtCCwfkN3Ji60gdYETPJJzi7s3BaD7HA_RX1ab3igunA4h8SiQxBFodgDZlp1vfLCOaMf8hIfB2H2_biF6MgCj6BMK3VKDgXRbRU5-s4ElpUKgLSAM3GQG45ABotC4HInqSVWlAZc4B0Ez0ji3xV37xbB8JwmiBPoMKbOYwzUM4EblnxGRsX7fOidLycsujDXDwiPfo-_yaxDCD40EB_Ws5S4Iacg112prg88AYbaAuvPzu82ZSNWGzxrkChtXzpxso");'></div>
+<div class="flex-1">
+<p class="text-base font-bold">Sarah Johnson</p>
+<p class="text-sm font-normal leading-normal text-text-light/70 dark:text-text-dark/70">Lead Engineer, Innovatech</p>
+</div>
+</div>
+<div class="flex gap-0.5 text-secondary">
+<span class="material-symbols-outlined !text-xl">star</span>
+<span class="material-symbols-outlined !text-xl">star</span>
+<span class="material-symbols-outlined !text-xl">star</span>
+<span class="material-symbols-outlined !text-xl">star</span>
+<span class="material-symbols-outlined !text-xl">star</span>
+</div>
+<p class="text-base font-normal leading-relaxed">
+                                        "This platform has cut our quoting time by 90%. What used to take a week now takes minutes. It's a game-changer for our rapid prototyping cycle."
+                                    </p>
+</div>
+<div class="flex flex-col gap-4 p-6 bg-white dark:bg-background-dark/50 rounded-xl border border-border-light dark:border-border-dark">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12" data-alt="Professional headshot of Mike Chen." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBE3QLyUpsPH4L05jkuKjkdo7Q4fjqaPHk5UfVm3i0ssNTHUsa4Ap1u_-00MFYjQG05d9_V4eYY8UTukY1DfVYZUB3WbQmC1Ncmu0f7C0U7_QyrkI8XbJEJlnczMp2b5wBny-nULfbwgHei0YhAf3ua-g9thsWolnQ4uZ5fiTZgOXlQ1rNa9bxvgET4jylgGSS2cOU_mXQrCb5BpNeI1xIPuEpKWT8Elf7T3WxwRV7QWxyneGvdumdqboIEB-cdYl6ZOckawAeTvGE");'></div>
+<div class="flex-1">
+<p class="text-base font-bold">Mike Chen</p>
+<p class="text-sm font-normal leading-normal text-text-light/70 dark:text-text-dark/70">Project Manager, Future Forward</p>
+</div>
+</div>
+<div class="flex gap-0.5 text-secondary">
+<span class="material-symbols-outlined !text-xl">star</span>
+<span class="material-symbols-outlined !text-xl">star</span>
+<span class="material-symbols-outlined !text-xl">star</span>
+<span class="material-symbols-outlined !text-xl">star</span>
+<span class="material-symbols-outlined !text-xl">star</span>
+</div>
+<p class="text-base font-normal leading-relaxed">
+                                        "The collaboration tools are incredible. Our team is more aligned than ever, and the order tracking gives us the transparency we've always needed."
+                                    </p>
+</div>
+<div class="flex flex-col gap-4 p-6 bg-white dark:bg-background-dark/50 rounded-xl border border-border-light dark:border-border-dark">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12" data-alt="Professional headshot of Emily Rodriguez." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBHMW3yztFvkp1ZBwYZM_Jax01Wx_5f0Pg5Su_r8cAqw9uWRSp_G2LBif9bAjPsEEHiKvL8q3qGOnLOb9_Hy2V35wVuQ8DTPD6D2WllQHRFSke88Ec0foPD_24IEr8b3v4tHh9Z4IDgIdZjORz7hfRi-abcL0bY2A-d7G89c5_jQ7z56xztJPEL3uS6Y2XiR2m04AIWJWhU9Gt_4ANIyEKwaX8tv8YWuZf7rqKuZwlcX7dQfznlW5cbF1zBwocxANemlUL1EwaYldw");'></div>
+<div class="flex-1">
+<p class="text-base font-bold">Emily Rodriguez</p>
+<p class="text-sm font-normal leading-normal text-text-light/70 dark:text-text-dark/70">Head of Prototyping, AeroCorp</p>
+</div>
+</div>
+<div class="flex gap-0.5 text-secondary">
+<span class="material-symbols-outlined !text-xl">star</span>
+<span class="material-symbols-outlined !text-xl">star</span>
+<span class="material-symbols-outlined !text-xl">star</span>
+<span class="material-symbols-outlined !text-xl">star</span>
+<span class="material-symbols-outlined !text-xl">star</span>
+</div>
+<p class="text-base font-normal leading-relaxed">
+                                        "We've seen a measurable improvement in our production efficiency and a reduction in communication errors since adopting this platform. Highly recommended."
+                                    </p>
+</div>
+</div>
+</div>
+<!-- CTA Section -->
+<div class="px-4 py-16 md:py-24 bg-primary text-white rounded-xl my-16">
+<div class="flex flex-col items-center gap-6 text-center max-w-2xl mx-auto">
+<h2 class="text-3xl md:text-4xl font-black leading-tight tracking-tight">
+                                    Ready to Streamline Your Manufacturing?
+                                </h2>
+<p class="text-base font-normal leading-normal opacity-80">
+                                    Join hundreds of innovative companies transforming their production pipelines. Get started today for free.
+                                </p>
+<div class="flex flex-col sm:flex-row gap-4 mt-4">
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-secondary text-white text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Sign Up for Free</span>
+</button>
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-white text-primary text-base font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-opacity">
+<span class="truncate">Request a Demo</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark/50 py-12 px-4 border-t border-border-light dark:border-border-dark">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+<div class="col-span-2 lg:col-span-1">
+<div class="flex items-center gap-2 mb-4">
+<div class="size-6 text-primary dark:text-white">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h3 class="text-lg font-bold">ManuFlow</h3>
+</div>
+<p class="text-sm text-text-light/70 dark:text-text-dark/70">© 2024 ManuFlow, Inc. All rights reserved.</p>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-bold">Company</h4>
+<a class="text-sm hover:text-primary dark:hover:text-secondary" href="#">About Us</a>
+<a class="text-sm hover:text-primary dark:hover:text-secondary" href="#">Careers</a>
+<a class="text-sm hover:text-primary dark:hover:text-secondary" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-bold">Support</h4>
+<a class="text-sm hover:text-primary dark:hover:text-secondary" href="#">Help Center</a>
+<a class="text-sm hover:text-primary dark:hover:text-secondary" href="#">Documentation</a>
+<a class="text-sm hover:text-primary dark:hover:text-secondary" href="#">API Status</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-bold">Legal</h4>
+<a class="text-sm hover:text-primary dark:hover:text-secondary" href="#">Terms of Service</a>
+<a class="text-sm hover:text-primary dark:hover:text-secondary" href="#">Privacy Policy</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-bold">Follow Us</h4>
+<div class="flex gap-4">
+<a class="text-text-light/70 dark:text-text-dark/70 hover:text-primary dark:hover:text-secondary" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-text-light/70 dark:text-text-dark/70 hover:text-primary dark:hover:text-secondary" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+</a>
+<a class="text-text-light/70 dark:text-text-dark/70 hover:text-primary dark:hover:text-secondary" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12.011c0 4.993 3.657 9.128 8.438 9.879V15.89h-2.54v-2.89h2.54V10.66c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.001c4.782-.751 8.438-4.886 8.438-9.879C22 6.477 17.523 2 12 2z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Manufacturing Insights Blog</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#135bec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101622",
+              "text-light": "#0d121b",
+              "text-dark": "#f8f9fc",
+              "text-secondary-light": "#4c669a",
+              "text-secondary-dark": "#aeb8d0",
+              "border-light": "#e7ebf3",
+              "border-dark": "#2c3649",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-border-light dark:border-border-dark">
+<div class="container mx-auto px-4">
+<div class="flex h-16 items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold tracking-tight">Manufacturing Co.</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Materials</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-sm font-bold text-primary" href="#">Blog</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors">
+<span class="truncate">Get a Quote</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="container mx-auto px-4 py-8 md:py-12">
+<!-- Page Heading -->
+<div class="text-center mb-12">
+<h1 class="text-4xl md:text-5xl font-black tracking-tighter">Manufacturing Insights Blog</h1>
+<p class="mt-3 max-w-2xl mx-auto text-base text-text-secondary-light dark:text-text-secondary-dark">
+                    Your source for the latest in custom parts production, from prototyping to high-volume manufacturing.
+                </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+<!-- Main Content Area -->
+<div class="lg:col-span-2 space-y-12">
+<!-- Featured Post -->
+<section>
+<h2 class="text-[22px] font-bold leading-tight tracking-tight mb-4">Featured Post</h2>
+<div class="bg-white dark:bg-background-dark border border-border-light dark:border-border-dark rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="flex flex-col lg:flex-row items-stretch">
+<div class="w-full lg:w-2/5 flex-shrink-0">
+<div class="w-full bg-center bg-no-repeat aspect-video lg:aspect-auto lg:h-full bg-cover" data-alt="Close-up of a blue anodized CNC machined part with complex geometry." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAyuHTGV_0wTo-tHYw0gy2mCLjgG8HEfJDXpa7K739DZ-ymH0ceAdQcLGH_4QHfXiyG9jnhtjMOXm_BD5EBf8QFdyFS26dBDtZ_1c_F94VG7yhWg72gDvAaP77eZKPOzRuEjRz0oX-1FUuVeNWcCWA8S2LKTYbUIS5K9dhCgpn8Z_KnnJZgcjJQnqej07WB03UpxBCpJUhP0EmgITuNfYPa3fzZw2fjg92jq49goARXRMQuj3fSEXujJGpqyIQNoygwltOq9r7QSBs");'></div>
+</div>
+<div class="flex-grow flex flex-col p-6">
+<p class="text-sm font-medium text-primary">Industry News</p>
+<h3 class="mt-1 text-xl font-bold leading-tight">Guide to Choosing the Right Metal for CNC Machining</h3>
+<p class="mt-3 text-base text-text-secondary-light dark:text-text-secondary-dark flex-grow">
+                                        Dive deep into the properties of various metals and learn how to select the perfect material for your project's needs, balancing cost, durability, and performance.
+                                    </p>
+<div class="mt-4 flex items-center justify-between">
+<p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">By John Doe - Oct 26, 2023</p>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-primary text-white text-sm font-medium hover:bg-primary/90 transition-colors">
+<span class="truncate">Read More</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- All Posts -->
+<section>
+<h2 class="text-[22px] font-bold leading-tight tracking-tight mb-4">All Posts</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Card 1 -->
+<div class="flex flex-col bg-white dark:bg-background-dark border border-border-light dark:border-border-dark rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="3D printer in action, creating a complex white plastic prototype." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDhLz3AG995Ce7Gd0SFMCJWTV--PHEG2H4i5mkp_qaUjuE3ih5kIolYo5SPcVhRCcPWYSGee5TwaMi8tZnAqcopCLvWax_rrmctAhytxxBHniIuB2CXUnxECEiYuK-hXarhgVXdLJIP59DDnRMXPayUDO5Y8bcB3wFt87Una_re6mg14Qy3kU5dyERY_JwbbJddg1RY3g4kicIkztmrKgo8MrfUP78yP-uQARkWaF2by6Q5jDfKEy9WknfMmqBMKjPBUiK9OwFRj4g");'></div>
+<div class="p-5 flex flex-col flex-grow">
+<p class="text-sm font-medium text-primary">3D Printing</p>
+<h3 class="mt-1 text-lg font-bold leading-tight">Innovations in Additive Manufacturing</h3>
+<p class="mt-2 text-base text-text-secondary-light dark:text-text-secondary-dark flex-grow">Exploring the latest advancements in 3D printing technology and materials for rapid prototyping.</p>
+<p class="mt-4 text-sm text-text-secondary-light dark:text-text-secondary-dark">By Jane Smith - Oct 20, 2023</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col bg-white dark:bg-background-dark border border-border-light dark:border-border-dark rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="A worker inspecting a bent sheet metal component in a factory setting." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBLv5WFUlj-Z6DJKJQB-vtI51hevi20fGyhKSLXvHaRvB9EH8lxgcv0sEPyl22OSWboVwm8qWwOpevMyADBpR0A1aiGb1qK7xcIVAyG5MX4ThWrXpOiQdx8i-L5PyQwIAhy4OEKHCRSe9kYKXUzpeFSfwS4DwT7UlGS6qe7ciDx-RwLX-xoflgoK3z3IYMrVxOn9a5xkWX5axm3M0eElLNWRx0ll9WbxkvC313qQnJmOcoDKB1BfTGSDNP3MbwL0uzYuEQ9dhXQELc");'></div>
+<div class="p-5 flex flex-col flex-grow">
+<p class="text-sm font-medium text-primary">Sheet Metal</p>
+<h3 class="mt-1 text-lg font-bold leading-tight">Cost-Saving Tips for Prototyping</h3>
+<p class="mt-2 text-base text-text-secondary-light dark:text-text-secondary-dark flex-grow">Learn how to optimize your designs for sheet metal fabrication to reduce costs and lead times.</p>
+<p class="mt-4 text-sm text-text-secondary-light dark:text-text-secondary-dark">By Mike Johnson - Oct 15, 2023</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col bg-white dark:bg-background-dark border border-border-light dark:border-border-dark rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="An array of raw material blocks: aluminum, steel, and brass." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAWLyIMifTrPYjW0XXksigeNoojD92YxVMgg-PmcDrsXAPHjSShiTO21vnAf7Gsr-MeIswiJ1hvKZjzHyTVoPJfo8wsdb4yjKX0P5i5WRx4mC6DD5CTcIW5s8tiAvvW-dAGiulMvuxXHHHxLR6HKQdsdxT7D0nBT0YDCaFf-awwSn9OsPhAWrHmQ3paigLqPnyFMSkRbtmsUrcyIflUxWgGtjquXGfk8N1rVr_86WFMZmIfNpkFx3TLx6QVTvqVAR1O_53152P6Ntc");'></div>
+<div class="p-5 flex flex-col flex-grow">
+<p class="text-sm font-medium text-primary">Materials Science</p>
+<h3 class="mt-1 text-lg font-bold leading-tight">Understanding Material Hardness</h3>
+<p class="mt-2 text-base text-text-secondary-light dark:text-text-secondary-dark flex-grow">A deep dive into Rockwell, Brinell, and Vickers hardness testing and what it means for your parts.</p>
+<p class="mt-4 text-sm text-text-secondary-light dark:text-text-secondary-dark">By Sarah Chen - Oct 10, 2023</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flex flex-col bg-white dark:bg-background-dark border border-border-light dark:border-border-dark rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="A robotic arm moving parts on a modern assembly line." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRW9k9TD3jA1nXqhahHsE12PM54o2J0bbyViSghGNjpUd9aFAqulbeql5wd76PhsC21EsWvsBI7tXlZfOQG9AO5s6UtkDJ7GZtK-IFXPs230ZFA9wDcBmgjg6RxRLTgMoRIcwUpM7Hgominqzqaka2xAwwDVHw9kLiUADtTEJgMgvCMs56SfauKuiLZSYQ0swDNOfFZgkMFP4dbwIyjkBxoNTeqpttWKoG2vk8E2YqYFyXUoc-WT104KifMrWwX4A6lk-8hp-L-RA");'></div>
+<div class="p-5 flex flex-col flex-grow">
+<p class="text-sm font-medium text-primary">Industry News</p>
+<h3 class="mt-1 text-lg font-bold leading-tight">The Rise of Automation in Manufacturing</h3>
+<p class="mt-2 text-base text-text-secondary-light dark:text-text-secondary-dark flex-grow">How robotics and AI are transforming the factory floor and what it means for the future of production.</p>
+<p class="mt-4 text-sm text-text-secondary-light dark:text-text-secondary-dark">By David Lee - Oct 05, 2023</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Sidebar -->
+<aside class="space-y-8">
+<!-- Search Bar -->
+<div class="bg-white dark:bg-background-dark p-6 rounded-xl border border-border-light dark:border-border-dark shadow-sm">
+<h3 class="text-lg font-bold mb-4">Search</h3>
+<div class="relative">
+<input class="w-full h-10 px-4 pr-10 rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary" placeholder="Search articles..." type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-text-secondary-light dark:text-text-secondary-dark">search</span>
+</div>
+</div>
+<!-- Categories -->
+<div class="bg-white dark:bg-background-dark p-6 rounded-xl border border-border-light dark:border-border-dark shadow-sm">
+<h3 class="text-lg font-bold mb-4">Topics</h3>
+<ul class="space-y-3">
+<li><a class="flex justify-between items-center text-text-secondary-light dark:text-text-secondary-dark hover:text-primary transition-colors" href="#"><span>CNC Machining</span><span class="text-xs font-medium">5</span></a></li>
+<li><a class="flex justify-between items-center text-text-secondary-light dark:text-text-secondary-dark hover:text-primary transition-colors" href="#"><span>3D Printing</span><span class="text-xs font-medium">8</span></a></li>
+<li><a class="flex justify-between items-center text-text-secondary-light dark:text-text-secondary-dark hover:text-primary transition-colors" href="#"><span>Sheet Metal</span><span class="text-xs font-medium">3</span></a></li>
+<li><a class="flex justify-between items-center text-text-secondary-light dark:text-text-secondary-dark hover:text-primary transition-colors" href="#"><span>Materials Science</span><span class="text-xs font-medium">6</span></a></li>
+<li><a class="flex justify-between items-center text-text-secondary-light dark:text-text-secondary-dark hover:text-primary transition-colors" href="#"><span>Industry News</span><span class="text-xs font-medium">12</span></a></li>
+</ul>
+</div>
+<!-- Newsletter CTA -->
+<div class="bg-primary/10 dark:bg-primary/20 p-6 rounded-xl border border-primary/20 dark:border-primary/30">
+<h3 class="text-lg font-bold text-text-light dark:text-text-dark">Stay Ahead of the Curve</h3>
+<p class="mt-2 text-sm text-text-secondary-light dark:text-text-secondary-dark">Subscribe to our newsletter for the latest manufacturing insights.</p>
+<form class="mt-4 flex flex-col sm:flex-row gap-2">
+<input class="w-full h-10 px-4 rounded-lg border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary flex-grow" placeholder="Enter your email" type="email"/>
+<button class="flex-shrink-0 min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-medium hover:bg-primary/90 transition-colors">
+<span class="truncate">Subscribe</span>
+</button>
+</form>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-border-light dark:border-border-dark mt-16">
+<div class="container mx-auto px-4 py-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="md:col-span-1">
+<div class="flex items-center gap-2">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold">Manufacturing Co.</h2>
+</div>
+<p class="mt-4 text-sm text-text-secondary-light dark:text-text-secondary-dark">123 Industrial Way, <br/>Suite 100, <br/>Innovate City, 12345</p>
+</div>
+<div>
+<h4 class="font-bold mb-4">Company</h4>
+<ul class="space-y-2 text-sm text-text-secondary-light dark:text-text-secondary-dark">
+<li><a class="hover:text-primary" href="#">About Us</a></li>
+<li><a class="hover:text-primary" href="#">Careers</a></li>
+<li><a class="hover:text-primary" href="#">Blog</a></li>
+<li><a class="hover:text-primary" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">Services</h4>
+<ul class="space-y-2 text-sm text-text-secondary-light dark:text-text-secondary-dark">
+<li><a class="hover:text-primary" href="#">CNC Machining</a></li>
+<li><a class="hover:text-primary" href="#">3D Printing</a></li>
+<li><a class="hover:text-primary" href="#">Sheet Metal</a></li>
+<li><a class="hover:text-primary" href="#">Injection Molding</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">Connect</h4>
+<ul class="space-y-2 text-sm text-text-secondary-light dark:text-text-secondary-dark">
+<li><a class="hover:text-primary" href="#">LinkedIn</a></li>
+<li><a class="hover:text-primary" href="#">Twitter</a></li>
+<li><a class="hover:text-primary" href="#">Facebook</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-border-light dark:border-border-dark text-center text-sm text-text-secondary-light dark:text-text-secondary-dark">
+<p>© 2024 Manufacturing Co. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
